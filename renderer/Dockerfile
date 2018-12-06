@@ -94,6 +94,7 @@ RUN shapeindex --shape_files \
 
 RUN mkdir /map_data
 VOLUME /map_data
+COPY map_data/config.json /map_data
 
 RUN mkdir /scripts
 COPY scripts/compile_style.sh /scripts
